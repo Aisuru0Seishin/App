@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 //!AbsorbPointer
 
 class Widget003 extends StatelessWidget {
-  const Widget003({Key? key}) : super(key: key);
+  const Widget003({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class Widget003 extends StatelessWidget {
             child: AbsorbPointer(
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color.fromARGB(255, 210, 212, 74),
+                  backgroundColor: const Color.fromARGB(255, 210, 212, 74),
                 ),
                 onPressed: () {},
                 child: null,

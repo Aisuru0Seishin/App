@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 //! AlertDialog
 
 class Widget004 extends StatefulWidget {
-  const Widget004({Key? key}) : super(key: key);
+  const Widget004({super.key});
 
   @override
   State<Widget004> createState() => _Widget004State();

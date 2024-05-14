@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 
 class Widget001 extends StatefulWidget {
   const Widget001({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<Widget001> createState() => _Widget001State();

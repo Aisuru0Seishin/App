@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 //!AnimatedContainer
 
 class Widget008 extends StatefulWidget {
-  const Widget008({Key? key}) : super(key: key);
+  const Widget008({super.key});
 
   @override
   State<Widget008> createState() => _Widget008State();

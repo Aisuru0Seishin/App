@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 //! AnimatedList
 
 class Widget012 extends StatefulWidget {
-  const Widget012({Key? key}) : super(key: key);
+  const Widget012({super.key});
 
   @override
   Widget012State createState() => Widget012State();

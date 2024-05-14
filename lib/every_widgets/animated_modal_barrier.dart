@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 //! AnimatedModalBarrier
 
 class Widget013 extends StatefulWidget {
-  const Widget013({Key? key}) : super(key: key);
+  const Widget013({super.key});
 
   @override
   State<StatefulWidget> createState() => _Widget013State();
@@ -21,14 +21,14 @@ class _Widget013State extends State<Widget013>
 
   @override
   void initState() {
-    ColorTween _colorTween = ColorTween(
+    ColorTween colorTween = ColorTween(
       begin: Colors.orangeAccent.withOpacity(0.5),
       end: Colors.blueGrey.withOpacity(0.5),
     );
 
     _animationController =
         AnimationController(vsync: this, duration: const Duration(seconds: 3));
-    _colorAnimation = _colorTween.animate(_animationController);
+    _colorAnimation = colorTween.animate(_animationController);
 
     _animatedModalBarrier = AnimatedModalBarrier(
       color: _colorAnimation,

@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-
-import 'every_widgets/about_dialog.dart';
+import 'package:flutter_app/every_widgets/animated_modal_barrier.dart';
 
 const Color darkBlue = Color(0xFF12202F);
 
-void main() {
+void main1() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +21,7 @@ class MyApp extends StatelessWidget {
           title: const Text('Flutter Mapp'),
         ),
         //! Just change the Widget001 for the Widget you want.
-        body: const Widget001(),
+        body: const Widget013(),
       ),
     );
   }

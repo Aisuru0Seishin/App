@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 //! AboutListTile
 class Widget002 extends StatelessWidget {
-  const Widget002({Key? key}) : super(key: key);
+  const Widget002({super.key});
 
   @override
   Widget build(BuildContext context) {

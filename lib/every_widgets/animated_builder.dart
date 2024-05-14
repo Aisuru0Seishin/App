@@ -5,7 +5,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
 class Widget007 extends StatefulWidget {
-  const Widget007({Key? key}) : super(key: key);
+  const Widget007({super.key});
 
   @override
   State<Widget007> createState() => _Widget007State();

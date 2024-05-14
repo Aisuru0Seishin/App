@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 //! AnimatedAlign
 
 class Widget006 extends StatefulWidget {
-  const Widget006({Key? key}) : super(key: key);
+  const Widget006({super.key});
 
   @override
   State<Widget006> createState() => _Widget006State();

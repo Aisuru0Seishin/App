@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 //! AnimatedDefaultTextStyle
 
 class Widget010 extends StatefulWidget {
-  const Widget010({Key? key}) : super(key: key);
+  const Widget010({super.key});
 
   @override
   State<Widget010> createState() => _Widget010State();
