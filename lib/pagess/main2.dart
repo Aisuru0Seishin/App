@@ -1,4 +1,3 @@
-/*
 import 'package:flutter/material.dart';
 import 'package:flutter_app/pagess/home_page.dart';
 import 'package:flutter_app/pagess/intro_pages.dart';
@@ -25,4 +24,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-*/
