@@ -4,25 +4,29 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app/main.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const Backeend());
 }
 
-class Myapp extends StatelessWidget {
-  const Myapp({super.key});
+class Backeend extends StatelessWidget {
+  const Backeend({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: CupertinoTextFieldDemo(),
     );
   }
 }
 
 class CupertinoTextFieldDemo extends StatelessWidget {
-  const CupertinoTextFieldDemo({super.key});
+  const CupertinoTextFieldDemo(
+      {super.key, this.email = '', this.password = ''});
+
+  final String email;
+  final String password;
 
   @override
   Widget build(BuildContext context) {
@@ -34,29 +38,35 @@ class CupertinoTextFieldDemo extends StatelessWidget {
         child: ListView(
           restorationId: 'text_field_demo_list_view',
           padding: const EdgeInsets.all(16),
-          children: const [
+          children: [
             Padding(
-              padding: EdgeInsets.symmetric(vertical: 8),
+              padding: const EdgeInsets.symmetric(vertical: 8),
               child: CupertinoTextField(
                 textInputAction: TextInputAction.next,
                 placeholder: "Email",
                 keyboardType: TextInputType.emailAddress,
                 clearButtonMode: OverlayVisibilityMode.editing,
                 autocorrect: false,
+                onChanged: (value) {
+                  debugPrint(value);
+                },
               ),
             ),
             Padding(
-              padding: EdgeInsets.symmetric(vertical: 8),
+              padding: const EdgeInsets.symmetric(vertical: 8),
               child: CupertinoTextField(
                 textInputAction: TextInputAction.next,
                 placeholder: "Password",
                 clearButtonMode: OverlayVisibilityMode.editing,
                 obscureText: true,
                 autocorrect: false,
+                onChanged: (value) {
+                  debugPrint(value);
+                },
               ),
             ),
             // Disabled text field
-            Padding(
+            const Padding(
               padding: EdgeInsets.symmetric(vertical: 8),
               child: CupertinoTextField(
                 enabled: false,
@@ -66,6 +76,13 @@ class CupertinoTextFieldDemo extends StatelessWidget {
                 autocorrect: false,
               ),
             ),
+            TextButton.icon(
+                onPressed: () {
+                  debugPrint(email);
+                  debugPrint(password);
+                },
+                icon: const Icon(Icons.save),
+                label: const Text("Sign In"))
           ],
         ),
       ),
