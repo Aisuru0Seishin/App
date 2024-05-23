@@ -3,11 +3,11 @@ import 'package:flutter_app/pagess/home_page.dart';
 import 'package:flutter_app/pagess/intro_pages.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MyAppo());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class MyAppo extends StatelessWidget {
+  const MyAppo({super.key});
 
   @override
   Widget build(BuildContext context) {
